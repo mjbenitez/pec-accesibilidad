@@ -36,7 +36,7 @@
    */
   
   .blog-masthead {
-    background-color: #00659e;
+    background-color: #753aa5;
     -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
             box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
   }
@@ -83,10 +83,12 @@
     padding-bottom: 20px;
   }
   .blog-title {
-    margin-top: 30px;
+    color: #fff;
+    padding-top: 30px;
     margin-bottom: 0;
     font-size: 50px;
     font-weight: normal;
+    text-align: center;
   }
   .blog-description {
     font-size: 20px;
