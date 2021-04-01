@@ -20,10 +20,10 @@
         <div class="blog-masthead">
             <h1 class="blog-title">Blog sobre Accesibilidad Web</h1>
             <nav class="blog-nav">
-                <a class="blog-nav-item active" href="index.html">Home</a>
-                <a class="blog-nav-item" href="referentes.html">Referentes</a>
-                <a class="blog-nav-item" href="about.html">Sobre mi</a>
-                <a class="blog-nav-item" href="#">Habla con nosotros</a>
+                <a href="index.html">Home</a>
+                <a href="referentes.html">Referentes</a>
+                <a href="about.html">Sobre mi</a>
+                <a class="current" href="#">Habla con nosotros</a>
 
             </nav>
         </div>
@@ -32,7 +32,7 @@
     <div class="container">
 
         <div class="blog-header">
-            <p class="lead blog-description">Contacta con nosotros</p>
+            <p class="lead blog-text">Contacta con nosotros</p>
             <p>Si tienes alguna sugerencia de cambio y/o mejora, por favor, contacta con nosotros. ¡Gracias!</p>
         </div>
 
@@ -43,8 +43,8 @@
                     <!-- Body del formulario -->
                     <!-- Nombre -->
                     <div class="form__item">
-                        <label class="form__label" for="name">
-                            Nombre
+                        <label class="lead blog-text" for="name">
+                            <strong>Nombre</strong>
                             <span tabindex="0">*
                                 <span class="u-visually-hidden"> es un campo que no puede estar vacío.</span>
                             </span>
@@ -54,8 +54,8 @@
             
                     <!-- Apellidos -->
                     <div class="form__item">
-                        <label class="form__label" for="surname">
-                            Apellidos
+                        <label class="lead blog-text" for="surname">
+                            <strong>Apellidos</strong>
                             <span tabindex="0">*
                                 <span class="u-visually-hidden"> es un campo que no puede estar vacío.</span>
                             </span>
@@ -64,8 +64,8 @@
                     </div>
                     <!-- EMail -->
                     <div class="form__item">
-                        <label class="form__label" for="email">
-                            Correo Electrónico
+                        <label class="lead blog-text" for="email">
+                            <strong>Correo Electrónico</strong>
                             <span tabindex="0">*
                                 <span class="u-visually-hidden"> es un campo que no puede estar vacío.</span>
                             </span>
@@ -74,26 +74,26 @@
                     </div>
                     <!-- Teléfono -->
                     <div class="form__item">
-                        <label class="form__label" for="mobile">
-                            Teléfono
+                        <label class="lead blog-text" for="mobile">
+                            <strong>Teléfono</strong>
                         </label>
                         <input class="form__input" type="text" id="mobile" name="mobile" required>
                     </div>
                     <!-- Medio de contacto preferido -->
                     <div class="form__item">
-                        <label class="form__label" for="mobile">
-                            Elige cómo quieres que contactemos contigo en caso de ser necesario
+                        <label class="lead blog-text" for="mobile">
+                            <strong>Elige cómo quieres que contactemos contigo en caso de ser necesario</strong>
                         </label>
                         <input id="mail-contact" type="radio" name="contact-mode" value="mail-contact" />
-                        <label for="mail-contact">Mediante correo electrónico</label><br />
+                        <label class="lead blog-text"  for="mail-contact">Mediante correo electrónico</label><br />
                         <input id="phone-contact" type="radio" name="contact-mode" value="phone-contact" />
-                        <label for="phone-contact">Mediante SMS</label><br />
+                        <label class="lead blog-text"  for="phone-contact">Mediante SMS</label><br />
                         
                     </div>
                     <!-- Comentario -->
                     <div class="form__wrapper">
-                        <label class="form__title" for="comment">
-                            Comentario
+                        <label class="lead blog-text" for="comment">
+                            <strong>Comentario</strong>
                             <!-- En un proyecto real crearíamos una directiva personalizada que en su lugar -->
                             <span tabindex="0">*
                                 <span class="u-visually-hidden"> es un campo que no puede estar vacío.</span>
@@ -102,7 +102,7 @@
                         <textarea class="form__textarea" id="comment" name="comment" required></textarea>
                     </div>
                 
-                    <p class="upload__text">(*) Este campo es obligatorio</p>
+                    <p class="lead blog-text">(*) Este campo es obligatorio</p>
                 
                     <button class="btn js-btn" type="submit" value="Enviar">Enviar formulario</button>
                 </form>

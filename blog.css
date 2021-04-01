@@ -43,7 +43,7 @@
   }
   
   /* Nav links */
-  .blog-nav-item {
+  .blog-nav a {
     position: relative;
     display: inline-block;
     padding: 10px;
@@ -54,6 +54,13 @@
   .blog-nav-item:hover,
   .blog-nav-item:focus {
     color: #fff;
+    font-size: 150%;
+    text-decoration: underline;
+  }
+
+  
+
+  .blog-nav .current {
     font-size: 150%;
     text-decoration: underline;
   }
@@ -84,6 +91,10 @@
     color: #767676;
   }
   
+  .blog-text {
+    font-size: 16px;
+    color: #767676;
+  }
   
   /*
    * Main column and sidebar layout
