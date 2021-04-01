@@ -15,11 +15,11 @@
 
 <body>
     <!-- HEADER -->
-    <header>
+    <header role="heading" aria-level="1">
         <div class="blog-masthead">
             <h1 class="blog-title">Blog sobre Accesibilidad Web</h1>
-            <nav class="blog-nav">
-                <a class="current" href="#">Noticias</a>
+            <nav class="blog-nav" role="navigation">
+                <a class="current" href="#" aria-current="page">Noticias</a>
                 <a href="referentes.html">Referentes</a>
                 <a href="about.html">Sobre mi</a>
                 <a href="contacto.html">Habla con nosotros</a>
@@ -27,7 +27,7 @@
         </div>
     </header>
 
-    <main class="container">
+    <main class="container" role="main">
         <div class="blog-header">
             <p class="lead blog-description"> Pequeño blog para recopilar recursos de accesibilidad web </p>
         </div>
@@ -36,8 +36,8 @@
             <!-- MAIN -->
             <div class="col-sm-8 blog-main">
                 <!-- POST 1 -->
-                <article class="blog-post">
-                    <h2 class="blog-post-title" tabindex="0">Hablamos de accesibilidad con Olga Moreno</h2>
+                <article class="blog-post" role="article">
+                    <h2 class="blog-post-title" tabindex="0">Hablamos de accesibilidad con Olga Carreras</h2>
                     <p class="blog-post-meta">30 de marzo, 2020</p>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in nisi nulla. Nullam nec elit augue.
@@ -56,7 +56,7 @@
                             tempor gravida</u>, arcu augue lacinia urna, quis pulvinar nulla odio eget erat.</p>
                 </article>
                 <!-- POST 2 -->
-                <article class="blog-post">
+                <article class="blog-post" role="article">
                     <h2 class="blog-post-title" tabindex="0">Analizamos el diseño de la web de Amazon</h2>
                     <p class="blog-post-meta">23 de marzo, 2020</p>
 

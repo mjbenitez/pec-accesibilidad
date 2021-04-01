@@ -16,13 +16,13 @@
 <body>
     
     <!-- HEADER -->
-    <header>
+    <header role="heading" aria-level="1">
         <div class="blog-masthead">
             <h1 class="blog-title">Blog sobre Accesibilidad Web</h1>
-            <nav class="blog-nav">
+            <nav class="blog-nav" role="navigation">
                 <a href="index.html">Noticias</a>
                 <a href="referentes.html">Referentes</a>
-                <a class="current" href="#">Sobre mi</a>
+                <a class="current" href="#" aria-current="page">Sobre mi</a>
                 <a href="contacto.html">Habla con nosotros</a>
             </nav>
         </div>
@@ -34,11 +34,11 @@
             <p class="lead blog-description">Un poquito sobre mi</p>
         </div>
 
-        <main class="row">
+        <main class="row" role="main">
             <!-- MAIN -->
             <div class="col-sm-8 blog-main">
                 <!-- POST 1 -->
-                <article class="blog-post">
+                <article class="blog-post"  role="article">
                     <img src="./images/icat.jpeg" alt="fotografía en primer plano de cara de gato" />
                     <div class="social-media">
                         <img src="./images/octophoto.PNG" alt="icono de octocat personalizado" />

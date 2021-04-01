@@ -16,19 +16,19 @@
 <body>
     
     <!-- HEADER -->
-    <header>
+    <header role="heading" aria-level="1">
         <div class="blog-masthead">
             <h1 class="blog-title">Blog sobre Accesibilidad Web</h1>
-            <nav class="blog-nav">
+            <nav class="blog-nav" role="navigation">
                 <a href="index.html">Noticias</a>
-                <a class="current" href="#">Referentes</a>
+                <a class="current" href="#" aria-current="page">Referentes</a>
                 <a href="about.html">Sobre mi</a>
                 <a href="contacto.html">Habla con nosotros</a>
             </nav>
         </div>
     </header>
 
-    <main class="container">
+    <main class="container" role="main">
             <div class="blog-header">
                 <p class="lead blog-description">Personas que nos ayudan a hacer más accesibles los sitios web</p>
             </div>
@@ -37,12 +37,12 @@
                 <!-- MAIN -->
                 <div class="col-sm-8 blog-main">
                     <!-- REF 1 -->
-                    <article class="blog-post">
+                    <article class="blog-post"  role="article">
                         <img src="./images/alice.jpg" alt="fotografía de alice boxhall" tabindex="0"/>
-                        <p class="lead blog-description">Alice Boxhall - ingeniera de software del equipo de accesibilidad de Google</p>
+                        <p class="lead blog-description" tabindex="0">Alice Boxhall - ingeniera de software del equipo de accesibilidad de Google</p>
                         <div class="social-media">
-                            <img src="./images/twitter.png" alt="icono de la aplicación twitter" />
-                            <a class="blog-post-meta" href="https://twitter.com/sundress?lang=es" target="_blank" tabindex="0"> @sundress</a>
+                            <img src="./images/twitter.png" alt="icono d            e la aplicación twitter" />
+                            <a class="blog-post-meta" href="https://twitter.com/sundress?lang=es" target="_blank" tabindex="0" aria-label="enlace al twitter de Alice"> @sundress</a>
                         </div>
                         <hr>
                         <p>Nullam tristique <strong>vulputate erat</strong> non ultrices. Vivamus non sagittis magna. Suspendisse consequat
@@ -52,12 +52,12 @@
                                 tempor gravida</u>, arcu augue lacinia urna, quis pulvinar nulla odio eget erat.</p>
                     </article>
                     <!-- REF 2 -->
-                    <article class="blog-post">
+                    <article class="blog-post"  role="article">
                         <img src="./images/alena.jpg" alt="fotografía de alena nikolaeva" tabindex="0"/>
-                        <p class="lead blog-description">Alena Nikolaeva - desarrolladora front que se está iniciando en la accesibilidad, publica y comparte artículos muy interesantes sobre, por ejemplo, hacer components accesibles</p>
+                        <p class="lead blog-description" tabindex="0">Alena Nikolaeva - desarrolladora front que se está iniciando en la accesibilidad, publica y comparte artículos muy interesantes sobre, por ejemplo, hacer components accesibles</p>
                         <div class="social-media">
                             <img src="./images/twitter.png" alt="icono de la aplicación twitter" />
-                            <a class="blog-post-meta" href="https://twitter.com/alenanik11" target="_blank" tabindex="0"> @alenanik11</a>
+                            <a class="blog-post-meta" href="https://twitter.com/alenanik11" target="_blank" tabindex="0" aria-label="enlace al twitter de Alena"> @alenanik11</a>
                         </div>
                         <hr>
                         <p>Nullam tristique <strong>vulputate erat</strong> non ultrices. Vivamus non sagittis magna. Suspendisse consequat
@@ -67,12 +67,12 @@
                                 tempor gravida</u>, arcu augue lacinia urna, quis pulvinar nulla odio eget erat.</p>
                     </article>
                     <!-- REF 3 -->
-                    <article class="blog-post">
+                    <article class="blog-post"  role="article">
                         <img src="./images/juanjo.jpg" alt="fotografía de juanjo" tabindex="0"/>
-                        <p class="lead blog-description">Juanjo -desarrollador .NET especialista en accesibilidad, ha dado distintas charlas en conferencias de software acerca de accesibilidad y cómo la vive en primera persona</p>
+                        <p class="lead blog-description" tabindex="0">Juanjo -desarrollador .NET especialista en accesibilidad, ha dado distintas charlas en conferencias de software acerca de accesibilidad y cómo la vive en primera persona</p>
                         <div class="social-media">
                             <img src="./images/twitter.png" alt="icono de la aplicación twitter" />
-                            <a class="blog-post-meta" href="https://twitter.com/kastwey" target="_blank" tabindex="0"> @kastwey</a>
+                            <a class="blog-post-meta" href="https://twitter.com/kastwey" target="_blank" tabindex="0" aria-label="enlace al twitter de Juanjo"> @kastwey</a>
                         </div>
                         <hr>
                         <p>Nullam tristique <strong>vulputate erat</strong> non ultrices. Vivamus non sagittis magna. Suspendisse consequat

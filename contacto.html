@@ -16,14 +16,14 @@
 <body>
     
     <!-- HEADER -->
-    <header>
+    <header role="heading" aria-level="1">
         <div class="blog-masthead">
             <h1 class="blog-title">Blog sobre Accesibilidad Web</h1>
-            <nav class="blog-nav">
+            <nav class="blog-nav" role="navigation">
                 <a href="index.html">Noticias</a>
                 <a href="referentes.html">Referentes</a>
                 <a href="about.html">Sobre mi</a>
-                <a class="current" href="#">Habla con nosotros</a>
+                <a class="current" href="#" aria-current="page">Habla con nosotros</a>
 
             </nav>
         </div>
@@ -36,75 +36,66 @@
             <p>Si tienes alguna sugerencia de cambio y/o mejora, por favor, contacta con nosotros. ¡Gracias!</p>
         </div>
 
-        <main class="row">
+        <main class="row" role="main">
             <!-- MAIN -->
             <div class="col-sm-8 blog-main">
-                <form class="form js-form">
+                <form id="contact-form" class="form js-form" role="form">
                     <!-- Body del formulario -->
                     <!-- Nombre -->
                     <div class="form__item">
-                        <label class="lead blog-text" for="name">
+                        <label class="lead blog-text" for="name" id="descName">
                             <strong>Nombre</strong>
-                            <span tabindex="0">*
-                                <span class="u-visually-hidden"> es un campo que no puede estar vacío.</span>
-                            </span>
+                            <span>*</span>
                         </label>
-                        <input class="form__input" type="text" id="name" name="name" required>
+                        <input class="form__input" type="text" id="name" name="name" aria-required="true" required aria-describedby="descName">
                     </div>
             
                     <!-- Apellidos -->
                     <div class="form__item">
-                        <label class="lead blog-text" for="surname">
-                            <strong>Apellidos</strong>
-                            <span tabindex="0">*
-                                <span class="u-visually-hidden"> es un campo que no puede estar vacío.</span>
-                            </span>
+                        <label class="lead blog-text" for="surname" id="descSurname">
+                            <strong>Apellidos</strong>  
+                            <span>*</span>
                         </label>
-                        <input class="form__input" type="text" id="surname" name="surname" required>
+                        <input class="form__input" type="text" id="surname" name="surname" aria-required="true"  aria-describedby="descSurname" required>
                     </div>
                     <!-- EMail -->
                     <div class="form__item">
-                        <label class="lead blog-text" for="email">
+                        <label class="lead blog-text" for="email" id="descEmail">
                             <strong>Correo Electrónico</strong>
-                            <span tabindex="0">*
-                                <span class="u-visually-hidden"> es un campo que no puede estar vacío.</span>
-                            </span>
+                            <span>*</span>
                         </label>
-                        <input class="form__input" type="text" id="email" name="email" required>
+                        <input class="form__input" type="text" id="email" name="email" aria-describedby="descEmail" aria-required="true" required>
                     </div>
                     <!-- Teléfono -->
                     <div class="form__item">
-                        <label class="lead blog-text" for="mobile">
+                        <label class="lead blog-text" for="mobile" id="descMobile">
                             <strong>Teléfono</strong>
                         </label>
-                        <input class="form__input" type="text" id="mobile" name="mobile" required>
+                        <input class="form__input" type="text" id="mobile" name="mobile"  aria-describedby="descMobile">
                     </div>
                     <!-- Medio de contacto preferido -->
                     <div class="form__item">
                         <label class="lead blog-text" for="mobile">
                             <strong>Elige cómo quieres que contactemos contigo en caso de ser necesario: </strong>
                         </label><br />
-                        <input id="mail-contact" type="radio" name="contact-mode" value="mail-contact" />
+                        <input id="mail-contact" type="radio" name="contact-mode" value="mail-contact" checked aria-labelledby="mail-contact" />
                         <label class="lead blog-text"  for="mail-contact">Mediante correo electrónico</label><br />
-                        <input id="phone-contact" type="radio" name="contact-mode" value="phone-contact" />
+                    <input id="phone-contact" type="radio" name="contact-mode" value="phone-contact" aria-labelledby="phone-contact"/>
                         <label class="lead blog-text"  for="phone-contact">Mediante SMS</label><br />
                         
                     </div>
                     <!-- Comentario -->
                     <div class="form__wrapper">
-                        <label class="lead blog-text" for="comment">
+                        <label class="lead blog-text" for="comment" id="descComment">
                             <strong>Comentario</strong>
-                            <!-- En un proyecto real crearíamos una directiva personalizada que en su lugar -->
-                            <span tabindex="0">*
-                                <span class="u-visually-hidden"> es un campo que no puede estar vacío.</span>
-                            </span>
+                            <span>*</span>
                         </label>
-                        <textarea class="form__textarea" id="comment" name="comment" required></textarea>
+                        <textarea class="form__textarea" id="comment" name="comment" aria-required="true" required  aria-describedby="descComment"></textarea>
                     </div>
                 
                     <p class="lead blog-text">(*) Este campo es obligatorio</p>
                 
-                    <button class="btn js-btn" type="submit" value="Enviar">Enviar formulario</button>
+                    <button class="btn js-btn" type="submit" value="Enviar" role="button">Enviar formulario</button>
                 </form>
 
 
