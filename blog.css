@@ -28,10 +28,6 @@
     .container {
       width: 970px;
     }
-
-    .blog-masthead {
-      width: 970px;
-    }
   }
   
   
@@ -183,3 +179,14 @@
     color: white;
     box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
   }
+
+  .u-visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

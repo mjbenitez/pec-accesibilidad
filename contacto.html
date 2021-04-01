@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Recopilación de contenidos sobre accesibilidad web">
+
+    <title>Blog sobre Accesibilidad Web</title>
+
+    <!-- Bootstrap compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="blog.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!-- HEADER -->
+    <header>
+        <div class="blog-masthead">
+            <h1 class="blog-title">Blog sobre Accesibilidad Web</h1>
+            <nav class="blog-nav">
+                <a class="blog-nav-item active" href="index.html">Home</a>
+                <a class="blog-nav-item" href="referentes.html">Referentes</a>
+                <a class="blog-nav-item" href="about.html">Sobre mi</a>
+                <a class="blog-nav-item" href="#">Habla con nosotros</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="blog-header">
+            <p class="lead blog-description">Contacta con nosotros</p>
+            <p>Si tienes alguna sugerencia de cambio y/o mejora, por favor, contacta con nosotros. ¡Gracias!</p>
+        </div>
+
+        <main class="row">
+            <!-- MAIN -->
+            <div class="col-sm-8 blog-main">
+                <form class="form js-form">
+                    <!-- Body del formulario -->
+                    <!-- Nombre -->
+                    <div class="form__item">
+                        <label class="form__label" for="name">
+                            Nombre
+                            <span tabindex="0">*
+                                <span class="u-visually-hidden"> es un campo que no puede estar vacío.</span>
+                            </span>
+                        </label>
+                        <input class="form__input" type="text" id="name" name="name" required>
+                    </div>
+            
+                    <!-- Apellidos -->
+                    <div class="form__item">
+                        <label class="form__label" for="surname">
+                            Apellidos
+                            <span tabindex="0">*
+                                <span class="u-visually-hidden"> es un campo que no puede estar vacío.</span>
+                            </span>
+                        </label>
+                        <input class="form__input" type="text" id="surname" name="surname" required>
+                    </div>
+                    <!-- EMail -->
+                    <div class="form__item">
+                        <label class="form__label" for="email">
+                            Correo Electrónico
+                            <span tabindex="0">*
+                                <span class="u-visually-hidden"> es un campo que no puede estar vacío.</span>
+                            </span>
+                        </label>
+                        <input class="form__input" type="text" id="email" name="email" required>
+                    </div>
+                    <!-- Teléfono -->
+                    <div class="form__item">
+                        <label class="form__label" for="mobile">
+                            Teléfono
+                        </label>
+                        <input class="form__input" type="text" id="mobile" name="mobile" required>
+                    </div>
+                    <!-- Medio de contacto preferido -->
+                    <div class="form__item">
+                        <label class="form__label" for="mobile">
+                            Elige cómo quieres que contactemos contigo en caso de ser necesario
+                        </label>
+                        <input id="mail-contact" type="radio" name="contact-mode" value="mail-contact" />
+                        <label for="mail-contact">Mediante correo electrónico</label><br />
+                        <input id="phone-contact" type="radio" name="contact-mode" value="phone-contact" />
+                        <label for="phone-contact">Mediante SMS</label><br />
+                        
+                    </div>
+                    <!-- Comentario -->
+                    <div class="form__wrapper">
+                        <label class="form__title" for="comment">
+                            Comentario
+                            <!-- En un proyecto real crearíamos una directiva personalizada que en su lugar -->
+                            <span tabindex="0">*
+                                <span class="u-visually-hidden"> es un campo que no puede estar vacío.</span>
+                            </span>
+                        </label>
+                        <textarea class="form__textarea" id="comment" name="comment" required></textarea>
+                    </div>
+                
+                    <p class="upload__text">(*) Este campo es obligatorio</p>
+                
+                    <button class="btn js-btn" type="submit" value="Enviar">Enviar formulario</button>
+                </form>
+
+
+            </div>
+            <!-- SIDEBAR -->
+            <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                <aside class="sidebar-module sidebar-module-inset">
+                    <h4>Sobre este blog</h4>
+                    <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet
+                        fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                </aside>
+        </main>
+    </div>
+    <!-- FOOTER -->
+    <footer class="blog-footer">
+        <p>Made with &#128156; by MJB</p>
+        <p>
+            <a href="#">Ir al principio</a>
+        </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>
