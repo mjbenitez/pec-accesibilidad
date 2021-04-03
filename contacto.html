@@ -44,65 +44,78 @@
                     <!-- Nombre -->
                     <div class="form__item">
                         <label class="lead blog-text" for="name" id="descName">
-                            <strong>Nombre</strong>
-                            <span>*</span>
+                            <strong>Nombre *</strong>
                         </label>
-                        <input class="form__input" type="text" id="name" name="name" aria-required="true" required aria-describedby="descName">
+                        <input class="form__input" type="text" id="name" name="name" aria-required="true" required aria-describedby="name-help">
+                        <div id="name-help">
+                            Introduzca por favor su nombre
+                        </div>
                     </div>
             
                     <!-- Apellidos -->
                     <div class="form__item">
                         <label class="lead blog-text" for="surname" id="descSurname">
-                            <strong>Apellidos</strong>  
-                            <span>*</span>
+                            <strong>Apellidos *</strong>  
                         </label>
-                        <input class="form__input" type="text" id="surname" name="surname" aria-required="true"  aria-describedby="descSurname" required>
+                        <input class="form__input" type="text" id="surname" name="surname" aria-required="true"  aria-describedby="surname-help" required>
+                        <div id="surname-help">
+                            Introduzca por favor sus apellidos
+                        </div>
                     </div>
                     <!-- EMail -->
                     <div class="form__item">
                         <label class="lead blog-text" for="email" id="descEmail">
-                            <strong>Correo Electrónico</strong>
-                            <span>*</span>
+                            <strong>Correo Electrónico *</strong>
                         </label>
-                        <input class="form__input" type="text" id="email" name="email" aria-describedby="descEmail" aria-required="true" required>
+                        <input class="form__input" type="text" id="email" name="email" aria-describedby="email-help" aria-required="true" required>
+                        <div id="email-help">
+                            Introduzca por favor su correo electrónico
+                        </div>
                     </div>
                     <!-- Teléfono -->
                     <div class="form__item">
                         <label class="lead blog-text" for="mobile" id="descMobile">
                             <strong>Teléfono</strong>
                         </label>
-                        <input class="form__input" type="text" id="mobile" name="mobile"  aria-describedby="descMobile">
+                        <input class="form__input" type="text" id="mobile" name="mobile"  aria-describedby="mobile-help">
+                        <div id="mobile-help">
+                            Introduzca por favor su teléfono de contacto
+                        </div>
                     </div>
                     <!-- Medio de contacto preferido -->
                     <div class="form__item">
                         <label class="lead blog-text" for="mobile">
-                            <strong>Elige cómo quieres que contactemos contigo en caso de ser necesario: </strong>
+                            <strong>¿Quieres que nos pongamos en contacto contigo? Dinos cómo lo prefieres: </strong>
                         </label><br />
-                        <input id="mail-contact" type="radio" name="contact-mode" value="mail-contact" checked aria-labelledby="mail-contact" />
-                        <label class="lead blog-text"  for="mail-contact">Mediante correo electrónico</label><br />
-                    <input id="phone-contact" type="radio" name="contact-mode" value="phone-contact" aria-labelledby="phone-contact"/>
-                        <label class="lead blog-text"  for="phone-contact">Mediante SMS</label><br />
+                        <div role="radiogroup" aria-labelledby="form-contact">
+                            <input id="mail-contact" type="radio" name="contact-mode" value="mail-contact" role="radio" aria-checked="true" checked />
+                            <label class="lead blog-text"  for="mail-contact" aria-labelledby="mail-contact">Mediante correo electrónico</label><br />
+                            <input id="phone-contact" type="radio" name="contact-mode" value="phone-contact" role="radio"aria-checked="false" />
+                            <label class="lead blog-text"  for="phone-contact" aria-labelledby="phone-contact">Mediante SMS</label><br />
+                        </div>
                         
                     </div>
                     <!-- Comentario -->
                     <div class="form__wrapper">
                         <label class="lead blog-text" for="comment" id="descComment">
-                            <strong>Comentario</strong>
-                            <span>*</span>
+                            <strong>Comentario *</strong>
                         </label>
-                        <textarea class="form__textarea" id="comment" name="comment" aria-required="true" required  aria-describedby="descComment"></textarea>
+                        <textarea class="form__textarea" id="comment" name="comment" aria-required="true" required  aria-describedby="comment-help"></textarea>
+                        <div id="comment-help">
+                            Introduzca por favor su comentario
+                        </div>
                     </div>
                 
                     <p class="lead blog-text">(*) Este campo es obligatorio</p>
                 
-                    <button class="btn js-btn" type="submit" value="Enviar" role="button">Enviar formulario</button>
+                    <button class="btn js-btn" type="submit" value="Enviar" role="button" aria-label="enviar">Enviar formulario</button>
                 </form>
 
 
             </div>
             <!-- SIDEBAR -->
             <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-                <aside class="sidebar-module sidebar-module-inset">
+                <aside class="sidebar-module sidebar-module-inset" role="complementary" tabindex="0">
                     <h3>Sobre este blog</h3>
                     <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet
                         fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
@@ -110,7 +123,7 @@
         </main>
     </div>
     <!-- FOOTER -->
-    <footer class="blog-footer">
+    <footer class="blog-footer" role="contentinfo">
         <p>Made with &#128156; by MJB</p>
         <p>
             <a href="#">Ir al principio</a>
